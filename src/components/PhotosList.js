@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import users-list.scss from
+import './users-list.scss';
 
 export default function PhotosList() {
     const { albumId } = useParams();
