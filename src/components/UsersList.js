@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import './users-list.scss';
+import './styles.scss';
 
 export default function UsersList() {
     const [users, setUsers] = useState([]);

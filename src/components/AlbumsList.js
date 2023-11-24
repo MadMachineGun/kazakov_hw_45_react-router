@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import './users-list.scss';
+import './styles.scss';
 
 export default function AlbumsList() {
     const { userId } = useParams();

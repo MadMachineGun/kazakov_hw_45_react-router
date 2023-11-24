@@ -7,7 +7,7 @@ import PhotosList from './components/PhotosList';
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className='userslist'>
                 <Routes>
                     <Route path="/" element={<UsersList />} />
                     <Route path="/albums/:userId" element={<AlbumsList />} />
