@@ -16,7 +16,7 @@ export default function PhotosList() {
     }, [albumId]);
 
     return (
-        <div>
+        <div className='photos'>
             <h2>Фотографии из альбома</h2>
             <ul>
                 {photos.map(photo => (

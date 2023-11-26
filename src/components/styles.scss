@@ -10,6 +10,14 @@ body {
   background-color: $background-color;
 }
 
+.photos {
+  margin: auto;
+  text-align: center;
+  h2{
+    padding-left: 40px;
+  }
+}
+
 .userslist {
   display: flex;
   align-items: center;
