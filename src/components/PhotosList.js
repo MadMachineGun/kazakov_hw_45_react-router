@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -16,7 +15,7 @@ export default function PhotosList() {
 
     return (
         <div>
-            <h2>Фотографії з альбому</h2>
+            <h2>Фотографии из альбома</h2>
             <ul>
                 {photos.map(photo => (
                     <li key={photo.id}>
@@ -28,5 +27,3 @@ export default function PhotosList() {
         </div>
     );
 }
-
-

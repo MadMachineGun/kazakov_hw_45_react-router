@@ -1,9 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './styles.scss';
-
 
 export default function UsersList() {
     const [users, setUsers] = useState([]);
@@ -16,17 +14,15 @@ export default function UsersList() {
 
     return (
         <div>
-            <h2>Список користувачів</h2>
+            <h2>Список пользователей</h2>
             <ul>
                 {users.map(user => (
                     <li key={user.id}>
                         {user.name}
-                        <Link to={`/albums/${user.id}`}><button>Album</button></Link>
+                        <Link to={`/albums/${user.id}`} className='button'>Альбомы</Link>
                     </li>
                 ))}
             </ul>
         </div>
     );
 }
-
-

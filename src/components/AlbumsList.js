@@ -15,16 +15,15 @@ export default function AlbumsList() {
 
     return (
         <div>
-            <h2>Альбоми користувача</h2>
+            <h2>Альбомы пользователя</h2>
             <ul>
                 {albums.map(album => (
                     <li key={album.id}>
                         {album.title}
-                        <Link to={`/photos/${album.id}`}><button>Photos</button></Link>
+                        <Link to={`/photos/${album.id}`} className='button'>Фотографии</Link>
                     </li>
                 ))}
             </ul>
         </div>
     );
 }
-
