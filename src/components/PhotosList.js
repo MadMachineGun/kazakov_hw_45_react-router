@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import './styles.scss';
 
+// ...
+
 export default function PhotosList() {
     const { albumId } = useParams();
     const [photos, setPhotos] = useState([]);
@@ -19,7 +21,7 @@ export default function PhotosList() {
             <ul>
                 {photos.map(photo => (
                     <li key={photo.id}>
-                        <img src={photo.thumbnailUrl} alt={photo.title} />
+                        <img src={photo.url} alt={photo.title} />
                         <p>{photo.title}</p>
                     </li>
                 ))}
